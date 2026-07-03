@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimtu gaadi Adda</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 40px;
+        }
+        img{
+            width: 40%;
+            border-radius: 50%;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.612);
+        }
+        .btn-div{
+            padding: 20px;
+        }
+        button{
+            margin: 0 30px;
+            padding: 10px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            color: white;
+            border: 1px solid rgb(8, 206, 206);
+            background-color: rgb(8, 206, 206);
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: all 0.25s;
+        }
+        button:hover{
+            background-color: white;
+        }
+        .eat:hover{
+            color: rgb(8, 206, 206);
+        }
+        .play{
+            border-color: rgba(255, 162, 0, 0.934);
+            background-color: rgba(255, 162, 0, 0.934);
+        }
+        .play:hover{
+            color: rgba(255, 162, 0, 0.934);
+        }
+        .sleep{
+            background-color: rgb(250, 17, 17);
+            border-color: rgb(250, 17, 17);
+        }
+        .sleep:hover{
+            color: rgb(250, 17, 17);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="dog-image" src="" alt="Chimtu gaadi image">
+        <div class="btn-div">
+            <button class="eat" onclick="changeChimtuImg('https://media.tenor.com/GALOXNY-Z7YAAAAM/food-pizza.gif');">
+                Eat
+            </button>
+            <button class="play" onclick="changeChimtuImg('https://media.tenor.com/Ile97eFHbdIAAAA1/doggy-cute.webp');">
+                Play
+            </button>
+            <button class="sleep" onclick="changeChimtuImg('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNnkzJFRFN0ICe3PU9K-QzEFlzNZcic_fsaLWiUL6T_RbwpY-jomub2fc&s=10');">
+                Sleep
+            </button>
+        </div>
+    </div>
+    <script>
+        let img = document.getElementById('dog-image')
+        img.src="https://allmemetemplates.wordpress.com/wp-content/uploads/2020/02/img_20200710_111330.jpg"
+        function changeChimtuImg(url){
+            img.src=url
+        }
+    </script>
+</body>
+</html>
